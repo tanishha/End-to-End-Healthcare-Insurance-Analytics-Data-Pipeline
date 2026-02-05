@@ -81,6 +81,7 @@ def load_to_snowflake(**kwargs):
                 first_name VARCHAR(100),
                 last_name VARCHAR(100),
                 email VARCHAR(255),
+                date_of_birth DATE,
                 created_at TIMESTAMP_NTZ
             )
         """,
