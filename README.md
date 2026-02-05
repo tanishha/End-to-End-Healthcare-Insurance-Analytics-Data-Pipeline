@@ -122,33 +122,6 @@ python data_generator.py
 # Trigger: scd2_snapshots
 
 
-
-## Key Features
-
-- **API-driven synthetic data generation**  
-  Generates realistic healthcare insurance data (members, policies, claims) using rule-based logic to simulate real payer workflows without using sensitive data.
-
-- **Near-real-time ingestion**  
-  Event-driven ingestion using Kafka enables incremental processing of member enrollments, policy updates, and claim events instead of full batch reloads.
-
-- **Lakehouse-style architecture**  
-  Decouples ingestion and analytics using Parquet files staged in MinIO before loading into Snowflake, improving reliability and reprocessing capability.
-
-- **SCD Type 2 historical tracking**  
-  Tracks full history of member and policy attribute changes using dbt snapshots with effective start and end dates.
-
-- **Temporal joins for facts**  
-  Ensures each claim is joined to the **correct historical version** of the member and policy based on service date, enabling accurate point-in-time reporting.
-
-- **Analytics-ready dimensional models**  
-  Builds clean staging, dimension, and fact tables optimized for BI tools and downstream analytics.
-
-- **Automated orchestration**  
-  Apache Airflow schedules and manages ingestion, transformation, validation, and retries with full observability.
-
-- **Built-in data quality checks**  
-  dbt tests enforce not-null constraints, referential integrity, accepted values, and snapshot consistency.
-
 - **CI/CD-driven deployments**  
   GitHub Actions automates validation, compilation, testing, and production deployments with zero manual intervention.
 
