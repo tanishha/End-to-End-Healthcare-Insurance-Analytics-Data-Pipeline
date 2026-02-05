@@ -7,3 +7,5 @@ __pycache__/
 logs
 .github/
 quick_start.md
+profiles.yml
+.user.yml
