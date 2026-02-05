@@ -21,7 +21,7 @@ with DAG(
 
     dbt_snapshot = BashOperator(
         task_id="dbt_snapshot",
-        bash_command="cd /opt/airflow/healthcare_dbt && dbt snapshot"
+        bash_command="cd /opt/airflow/healthcare_dbt && dbt clean && dbt snapshot"
     )
     
     dbt_run_staging = BashOperator(
