@@ -21,6 +21,7 @@ This pipeline demonstrates a complete modern data stack architecture used by fin
 | **Cloud DW** | Snowflake | Scalable cloud data warehouse |
 | **Transformation** | dbt | Data transformation with SCD Type 2 and temporal joins |
 | **Testing** | GitHub Actions | CI/CD for automated testing and deployment |
+| **Query Tool** | DBeaver | Database IDE for querying and verifying data |
 | **Language** | Python | Data scripts and DAG development |
 
 ---
